@@ -65,13 +65,17 @@ nav ul li a{
 .content p{
     margin: 10px 0 30px;
     color: #333;
+    animation-delay: 0.5s;
 }
 .content .btn{
     padding: 15px 80px;
     font-size: 16px;
+    animation-delay: 0.5s;
 
 }
-
+.feature-img.anim{
+    animation-delay: 1.5s;
+}
 .btn:hover{
     border-top-right-radius: 30px;
 }
@@ -80,4 +84,18 @@ nav ul li a{
     position: absolute;
     bottom: 0;
     right: 10%;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(00px);
+    }
+    
 }
